@@ -1,0 +1,92 @@
+RESUMEN DE CAPITULO 1 
+
+ETIQUETA 	DESCRIPCION 
+<address>	Encierra la dirección de una página web
+<article>	Encierra una porción importante de texto.
+<aside>	Se utiliza para señalar texto, pero no forma parte del contenido principal. Por ejemplo en una barra lateral.
+<body>	Señala el texto que el usuario podrá visualizar en la página web 
+<cite>	Pone en formato cursivo el texto encerrado entre esta etiqueta 
+<figcaption>	Pone pequeñas leyendas debajo de las imágenes 
+<figure>	Encierra el apartado donde se pondrá un contenido multimedia ya sea imágenes, video, diagrama, etc. 
+<footer>	Representa la parte final de la página web. Puede ser utilizado dentro del cuerpo 
+<head>	Representa todo aquello que el usuario no vera, pero muestra información importante para el diseño de la página. 
+<header>	Presenta información introductoria del texto visible. Sirve para acumular índices, formularios de búsqueda, logos, etc. 
+<hgroup>	Sirve para agrupar todas las etiquetas H para respetar su jerarquía.
+<mark>	Remarca algún texto importante.
+<nav>	Indica secciones de enlaces con propósito de navegación dentro de la página web. 
+<pubdate>	Da formato a la fecha y hora
+<section>	Representa la sección principal del contenido visible. Se utiliza generalmente para crear varios módulos dentro del mismo. 
+<small>	Muestra los textos con las letras pequeñas como por ejemplo “derechos reservados”
+<time>	Muestra el tiempo en que se realizó la actividad de la página web en formato comprensible para el navegador.
+
+
+EJEMPLO DE CODIGO 
+
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+	<meta charset="iso-8859-1" />
+	<meta name="description" content="Ejemplo de HTML5" />
+	<meta name="keywords" content="HTML5, CSS3, JavaScript" />
+	<title> Ejemplo del libro. Capitulo 1 </title>
+	<link rel="stylesheet" href="misestilos.css">
+</head>
+<body>
+<header>
+	<h1>Ejemplo de HTML5 Capitulo 1</h1>
+</header>
+<nav> 
+	<ul>
+		<li> Home </li>
+		<li> Fotos </li>
+		<li> Videos </li>
+		<li> Contactos </li>
+	</ul>
+</nav>
+<section>
+	<article>
+	 <header>
+	  <hgroup>
+	   <h1> Mensaje 1 </h1>
+	   <h2> Subtitulo </h2>
+	  </hgroup>
+	   <p> publicado 12 - 12 - 2018 </p>
+	 </header>  
+	Primer Mensaje
+	<figure>
+	 <img src="http:minbooks.com/content/myimage.jpg">
+	 <figcaption>
+	   Imagen de primer mensaje
+	 </figcaption>
+	 </figure>
+	 <footer>
+	  <p> Comentarios (0) </p> 
+	</article>
+	<article>
+	 <header>
+	  <hgroup>
+	   <h1> Mensaje 2 </h1>
+	   <h2> Subtitulo </h2>
+	  </hgroup>
+	   <time datetime= "2018-12-01" pubdate> Publicado 01 - 12 - 2018 </time>
+	 </header>  
+	Segundo Mensaje
+	 <address>
+	   <a href="http://www.jdgauchat.com"> JD Gauchat </a>
+	 </address>
+	 <footer>
+	  <p> Comentarios (0) </p> 
+	</article>
+	<span> Mi <mark> coche </mark> es rojo </span>
+	<p> <span> Amo la pelicula <cite> Tentaciones </cite></span> </p>
+</section>
+<aside>
+	<blockquote> Mensaje #1 </blockquote>
+	<blockquote> Mensaje #2 </blockquote>	
+	<blockquote> Mensaje #3 </blockquote>
+</aside>
+<footer>
+ <small> Derechos Reservados &copy; 2010-2011 </small>
+</footer>
+</body>
+</html>
